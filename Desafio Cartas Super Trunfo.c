@@ -35,14 +35,7 @@ int main(){
     printf("Digite o número de pontos turisticos: \n");
     scanf("%d", &pt1);
 
-    densidadepop1 = (float)pop1/area1;
-    printf("A densidade populacional é: %.2f", densidadepop1);
 
-    pibpercap1 = (float)pib1/pop1;
-    printf("O PIB per capita é: %.2f", pibpercap1);
-
-    
-    
     // cadastrar carta 2
     printf("\nCadastramento da segunda carta \n\n");
     
@@ -66,13 +59,13 @@ int main(){
     
     printf("Digite o número de pontos turisticos: \n");
     scanf("%d", &pt2);
-
-    densidadepop2 = (float)pop2/area2;
-    printf("A densidade populacional é: %.2f", densidadepop2);
-
-    pibpercap1 = (float)pib2/pop2;
-    printf("O PIB per capita é: %.2f", pibpercap2);
     
+    // calculos com uso do casting
+    densidadepop1 = (float)pop1/area1;
+    pibpercap1 = (float)pib1/pop1;
+    densidadepop2 = (float)pop2/area2;
+    pibpercap1 = (float)pib2/pop2;
+
     
     // imprimir as informações de forma organizada
     
@@ -88,6 +81,8 @@ int main(){
     printf("Área: %.3f km^2\n", area1);
     printf("PIB: %.3f \n", pib1);
     printf("Número de Pontos Turisticos: %d \n", pt1);
+    printf("A densidade populacional é: %.2f \n", densidadepop1);
+    printf("O PIB per capita é: %.2f \n", pibpercap1);
     
     
     printf("\nCarta 2: \n");
@@ -98,6 +93,8 @@ int main(){
     printf("Área: %.3f km^2\n", area2);
     printf("PIB: %.3f \n", pib2);
     printf("Número de Pontos Turisticos: %d \n", pt2);
+    printf("A densidade populacional é: %.2f \n", densidadepop2);
+    printf("O PIB per capita é: %.2f \n", pibpercap2);
     
     return 0;
 }
