@@ -10,7 +10,7 @@ int main(){
     // declarar variáveis
     char estado1, estado2, cod1[5], cod2[5], cidade1[20], cidade2[20];
     int pop1, pop2, pt1, pt2;
-    float area1, area2, pib1, pib2;
+    float area1, area2, pib1, pib2, densidadepop1, densidadepop2, pibpercap1, pibpercap2;
     
     // cadastrar carta 1
     printf("Cadastramento da primeira carta \n");
@@ -34,6 +34,13 @@ int main(){
     
     printf("Digite o número de pontos turisticos: \n");
     scanf("%d", &pt1);
+
+    densidadepop1 = (float)pop1/area1;
+    printf("A densidade populacional é: %.2f", densidadepop1);
+
+    pibpercap1 = (float)pib1/pop1;
+    printf("O PIB per capita é: %.2f", pibpercap1);
+
     
     
     // cadastrar carta 2
@@ -59,6 +66,12 @@ int main(){
     
     printf("Digite o número de pontos turisticos: \n");
     scanf("%d", &pt2);
+
+    densidadepop2 = (float)pop2/area2;
+    printf("A densidade populacional é: %.2f", densidadepop2);
+
+    pibpercap1 = (float)pib2/pop2;
+    printf("O PIB per capita é: %.2f", pibpercap2);
     
     
     // imprimir as informações de forma organizada
